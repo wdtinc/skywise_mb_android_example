@@ -1,0 +1,4411 @@
+{
+  "version": 8,
+  "name": "Chicken and Waffles",
+  "sources": {
+    "mapbox-streets": {
+      "type": "vector",
+      "url": "mapbox://styles/mapbox/streets-v9"
+    },
+    "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source": {
+      "type": "vector",
+      "tilejson": "2.1.0",
+      "tiles": [
+        "http://nhunter.norman.wdtinc.com:8080/v1/frames/6b96a6f4-70db-4638-9040-a8b459821806/tile/{z}/{x}/{y}.mvt"
+      ],
+      "scheme": "xyz",
+      "name": "ce103ffb-68e4-4b6d-a22a-015883efefec",
+      "maxzoom": 10,
+      "minzoom": 0
+    }
+  },
+  "layers": [
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-undefineddbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          0
+        ]
+      ],
+      "paint": {
+        "fill-color": "#000000",
+        "fill-opacity": 0
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-0dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          0.5
+        ],
+        [
+          ">",
+          "dbz",
+          0
+        ]
+      ],
+      "paint": {
+        "fill-color": "#8b9392",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-0.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          1
+        ],
+        [
+          ">",
+          "dbz",
+          0.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#879091",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-1dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          1.5
+        ],
+        [
+          ">",
+          "dbz",
+          1
+        ]
+      ],
+      "paint": {
+        "fill-color": "#828c90",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-1.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          2
+        ],
+        [
+          ">",
+          "dbz",
+          1.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#7d888f",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-2dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          2.5
+        ],
+        [
+          ">",
+          "dbz",
+          2
+        ]
+      ],
+      "paint": {
+        "fill-color": "#78848e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-2.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          3
+        ],
+        [
+          ">",
+          "dbz",
+          2.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#73808e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-3dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          3.5
+        ],
+        [
+          ">",
+          "dbz",
+          3
+        ]
+      ],
+      "paint": {
+        "fill-color": "#6f7c8d",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-3.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          4
+        ],
+        [
+          ">",
+          "dbz",
+          3.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#6a788c",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-4dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          4.5
+        ],
+        [
+          ">",
+          "dbz",
+          4
+        ]
+      ],
+      "paint": {
+        "fill-color": "#65748b",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-4.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          5
+        ],
+        [
+          ">",
+          "dbz",
+          4.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#60708a",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          5.5
+        ],
+        [
+          ">",
+          "dbz",
+          5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5c6d89",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-5.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          6
+        ],
+        [
+          ">",
+          "dbz",
+          5.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#576988",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-6dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          6.5
+        ],
+        [
+          ">",
+          "dbz",
+          6
+        ]
+      ],
+      "paint": {
+        "fill-color": "#526587",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-6.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          7
+        ],
+        [
+          ">",
+          "dbz",
+          6.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#4d6186",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-7dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          7.5
+        ],
+        [
+          ">",
+          "dbz",
+          7
+        ]
+      ],
+      "paint": {
+        "fill-color": "#495d85",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-7.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          8
+        ],
+        [
+          ">",
+          "dbz",
+          7.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#445984",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-8dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          8.5
+        ],
+        [
+          ">",
+          "dbz",
+          8
+        ]
+      ],
+      "paint": {
+        "fill-color": "#3f5583",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-8.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          9
+        ],
+        [
+          ">",
+          "dbz",
+          8.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#3a5182",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-9dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          9.5
+        ],
+        [
+          ">",
+          "dbz",
+          9
+        ]
+      ],
+      "paint": {
+        "fill-color": "#364e82",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-9.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          10
+        ],
+        [
+          ">",
+          "dbz",
+          9.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#375184",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-10dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          10.5
+        ],
+        [
+          ">",
+          "dbz",
+          10
+        ]
+      ],
+      "paint": {
+        "fill-color": "#395586",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-10.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          11
+        ],
+        [
+          ">",
+          "dbz",
+          10.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#3b5988",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-11dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          11.5
+        ],
+        [
+          ">",
+          "dbz",
+          11
+        ]
+      ],
+      "paint": {
+        "fill-color": "#3d5d8a",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-11.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          12
+        ],
+        [
+          ">",
+          "dbz",
+          11.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#3f618d",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-12dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          12.5
+        ],
+        [
+          ">",
+          "dbz",
+          12
+        ]
+      ],
+      "paint": {
+        "fill-color": "#41658f",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-12.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          13
+        ],
+        [
+          ">",
+          "dbz",
+          12.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#436991",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-13dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          13.5
+        ],
+        [
+          ">",
+          "dbz",
+          13
+        ]
+      ],
+      "paint": {
+        "fill-color": "#456d93",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-13.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          14
+        ],
+        [
+          ">",
+          "dbz",
+          13.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#477195",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-14dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          14.5
+        ],
+        [
+          ">",
+          "dbz",
+          14
+        ]
+      ],
+      "paint": {
+        "fill-color": "#497598",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-14.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          15
+        ],
+        [
+          ">",
+          "dbz",
+          14.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#4a799a",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-15dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          15.5
+        ],
+        [
+          ">",
+          "dbz",
+          15
+        ]
+      ],
+      "paint": {
+        "fill-color": "#4c7d9c",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-15.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          16
+        ],
+        [
+          ">",
+          "dbz",
+          15.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#4e819e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-16dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          16.5
+        ],
+        [
+          ">",
+          "dbz",
+          16
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5085a0",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-16.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          17
+        ],
+        [
+          ">",
+          "dbz",
+          16.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5289a3",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-17dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          17.5
+        ],
+        [
+          ">",
+          "dbz",
+          17
+        ]
+      ],
+      "paint": {
+        "fill-color": "#548da5",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-17.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          18
+        ],
+        [
+          ">",
+          "dbz",
+          17.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5691a7",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-18dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          18.5
+        ],
+        [
+          ">",
+          "dbz",
+          18
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5895a9",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-18.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          19
+        ],
+        [
+          ">",
+          "dbz",
+          18.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5a99ab",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-19dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          19.5
+        ],
+        [
+          ">",
+          "dbz",
+          19
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5c9dae",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-19.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          20
+        ],
+        [
+          ">",
+          "dbz",
+          19.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#4ca58e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-20dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          20.5
+        ],
+        [
+          ">",
+          "dbz",
+          20
+        ]
+      ],
+      "paint": {
+        "fill-color": "#3cad6e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-20.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          21
+        ],
+        [
+          ">",
+          "dbz",
+          20.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#2db64e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-21dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          21.5
+        ],
+        [
+          ">",
+          "dbz",
+          21
+        ]
+      ],
+      "paint": {
+        "fill-color": "#2aaf48",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-21.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          22
+        ],
+        [
+          ">",
+          "dbz",
+          21.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#27a943",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-22dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          22.5
+        ],
+        [
+          ">",
+          "dbz",
+          22
+        ]
+      ],
+      "paint": {
+        "fill-color": "#25a33e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-22.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          23
+        ],
+        [
+          ">",
+          "dbz",
+          22.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#229c38",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-23dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          23.5
+        ],
+        [
+          ">",
+          "dbz",
+          23
+        ]
+      ],
+      "paint": {
+        "fill-color": "#1f9633",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-23.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          24
+        ],
+        [
+          ">",
+          "dbz",
+          23.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#1d902e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-24dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          24.5
+        ],
+        [
+          ">",
+          "dbz",
+          24
+        ]
+      ],
+      "paint": {
+        "fill-color": "#1a8928",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-24.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          25
+        ],
+        [
+          ">",
+          "dbz",
+          24.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#188323",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-25dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          25.5
+        ],
+        [
+          ">",
+          "dbz",
+          25
+        ]
+      ],
+      "paint": {
+        "fill-color": "#157d1e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-25.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          26
+        ],
+        [
+          ">",
+          "dbz",
+          25.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#127618",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-26dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          26.5
+        ],
+        [
+          ">",
+          "dbz",
+          26
+        ]
+      ],
+      "paint": {
+        "fill-color": "#107013",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-26.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          27
+        ],
+        [
+          ">",
+          "dbz",
+          26.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#0d6a0e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-27dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          27.5
+        ],
+        [
+          ">",
+          "dbz",
+          27
+        ]
+      ],
+      "paint": {
+        "fill-color": "#0b6409",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-27.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          28
+        ],
+        [
+          ">",
+          "dbz",
+          27.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#237308",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-28dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          28.5
+        ],
+        [
+          ">",
+          "dbz",
+          28
+        ]
+      ],
+      "paint": {
+        "fill-color": "#3b8207",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-28.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          29
+        ],
+        [
+          ">",
+          "dbz",
+          28.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#539106",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-29dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          29.5
+        ],
+        [
+          ">",
+          "dbz",
+          29
+        ]
+      ],
+      "paint": {
+        "fill-color": "#6ba105",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-29.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          30
+        ],
+        [
+          ">",
+          "dbz",
+          29.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#83b004",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-30dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          30.5
+        ],
+        [
+          ">",
+          "dbz",
+          30
+        ]
+      ],
+      "paint": {
+        "fill-color": "#9bbf03",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-30.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          31
+        ],
+        [
+          ">",
+          "dbz",
+          30.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#b3cf02",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-31dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          31.5
+        ],
+        [
+          ">",
+          "dbz",
+          31
+        ]
+      ],
+      "paint": {
+        "fill-color": "#cbde01",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-31.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          32
+        ],
+        [
+          ">",
+          "dbz",
+          31.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#e3ed00",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-32dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          32.5
+        ],
+        [
+          ">",
+          "dbz",
+          32
+        ]
+      ],
+      "paint": {
+        "fill-color": "#fcfd00",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-32.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          33
+        ],
+        [
+          ">",
+          "dbz",
+          32.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#f8f800",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-33dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          33.5
+        ],
+        [
+          ">",
+          "dbz",
+          33
+        ]
+      ],
+      "paint": {
+        "fill-color": "#f4f300",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-33.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          34
+        ],
+        [
+          ">",
+          "dbz",
+          33.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#f1ee00",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-34dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          34.5
+        ],
+        [
+          ">",
+          "dbz",
+          34
+        ]
+      ],
+      "paint": {
+        "fill-color": "#ede900",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-34.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          35
+        ],
+        [
+          ">",
+          "dbz",
+          34.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#e9e400",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-35dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          35.5
+        ],
+        [
+          ">",
+          "dbz",
+          35
+        ]
+      ],
+      "paint": {
+        "fill-color": "#e6df00",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-35.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          36
+        ],
+        [
+          ">",
+          "dbz",
+          35.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#e2da00",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-36dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          36.5
+        ],
+        [
+          ">",
+          "dbz",
+          36
+        ]
+      ],
+      "paint": {
+        "fill-color": "#ded500",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-36.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          37
+        ],
+        [
+          ">",
+          "dbz",
+          36.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#dbd000",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-37dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          37.5
+        ],
+        [
+          ">",
+          "dbz",
+          37
+        ]
+      ],
+      "paint": {
+        "fill-color": "#d7cb00",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-37.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          38
+        ],
+        [
+          ">",
+          "dbz",
+          37.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#d3c600",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-38dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          38.5
+        ],
+        [
+          ">",
+          "dbz",
+          38
+        ]
+      ],
+      "paint": {
+        "fill-color": "#d0c100",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-38.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          39
+        ],
+        [
+          ">",
+          "dbz",
+          38.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#ccbc00",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-39dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          39.5
+        ],
+        [
+          ">",
+          "dbz",
+          39
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c8b700",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-39.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          40
+        ],
+        [
+          ">",
+          "dbz",
+          39.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c5b300",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-40dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          40.5
+        ],
+        [
+          ">",
+          "dbz",
+          40
+        ]
+      ],
+      "paint": {
+        "fill-color": "#fa9400",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-40.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          41
+        ],
+        [
+          ">",
+          "dbz",
+          40.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#f69000",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-41dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          41.5
+        ],
+        [
+          ">",
+          "dbz",
+          41
+        ]
+      ],
+      "paint": {
+        "fill-color": "#f28d01",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-41.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          42
+        ],
+        [
+          ">",
+          "dbz",
+          41.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#ee8a01",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-42dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          42.5
+        ],
+        [
+          ">",
+          "dbz",
+          42
+        ]
+      ],
+      "paint": {
+        "fill-color": "#ea8702",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-42.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          43
+        ],
+        [
+          ">",
+          "dbz",
+          42.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#e78403",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-43dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          43.5
+        ],
+        [
+          ">",
+          "dbz",
+          43
+        ]
+      ],
+      "paint": {
+        "fill-color": "#e38103",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-43.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          44
+        ],
+        [
+          ">",
+          "dbz",
+          43.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#df7e04",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-44dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          44.5
+        ],
+        [
+          ">",
+          "dbz",
+          44
+        ]
+      ],
+      "paint": {
+        "fill-color": "#db7b05",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-44.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          45
+        ],
+        [
+          ">",
+          "dbz",
+          44.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#d77805",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-45dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          45.5
+        ],
+        [
+          ">",
+          "dbz",
+          45
+        ]
+      ],
+      "paint": {
+        "fill-color": "#d47406",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-45.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          46
+        ],
+        [
+          ">",
+          "dbz",
+          45.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#d07106",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-46dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          46.5
+        ],
+        [
+          ">",
+          "dbz",
+          46
+        ]
+      ],
+      "paint": {
+        "fill-color": "#cc6e07",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-46.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          47
+        ],
+        [
+          ">",
+          "dbz",
+          46.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c86b08",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-47dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          47.5
+        ],
+        [
+          ">",
+          "dbz",
+          47
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c46808",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-47.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          48
+        ],
+        [
+          ">",
+          "dbz",
+          47.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c16509",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-48dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          48.5
+        ],
+        [
+          ">",
+          "dbz",
+          48
+        ]
+      ],
+      "paint": {
+        "fill-color": "#bd620a",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-48.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          49
+        ],
+        [
+          ">",
+          "dbz",
+          48.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#b95f0a",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-49dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          49.5
+        ],
+        [
+          ">",
+          "dbz",
+          49
+        ]
+      ],
+      "paint": {
+        "fill-color": "#b55c0b",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-49.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          50
+        ],
+        [
+          ">",
+          "dbz",
+          49.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#b2590c",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-50dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          50.5
+        ],
+        [
+          ">",
+          "dbz",
+          50
+        ]
+      ],
+      "paint": {
+        "fill-color": "#f9230b",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-50.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          51
+        ],
+        [
+          ">",
+          "dbz",
+          50.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#f2230c",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-51dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          51.5
+        ],
+        [
+          ">",
+          "dbz",
+          51
+        ]
+      ],
+      "paint": {
+        "fill-color": "#ec230d",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-51.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          52
+        ],
+        [
+          ">",
+          "dbz",
+          51.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#e6230e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-52dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          52.5
+        ],
+        [
+          ">",
+          "dbz",
+          52
+        ]
+      ],
+      "paint": {
+        "fill-color": "#df240f",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-52.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          53
+        ],
+        [
+          ">",
+          "dbz",
+          52.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#d92410",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-53dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          53.5
+        ],
+        [
+          ">",
+          "dbz",
+          53
+        ]
+      ],
+      "paint": {
+        "fill-color": "#d32411",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-53.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          54
+        ],
+        [
+          ">",
+          "dbz",
+          53.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#cd2412",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-54dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          54.5
+        ],
+        [
+          ">",
+          "dbz",
+          54
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c62513",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-54.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          55
+        ],
+        [
+          ">",
+          "dbz",
+          54.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c02514",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-55dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          55.5
+        ],
+        [
+          ">",
+          "dbz",
+          55
+        ]
+      ],
+      "paint": {
+        "fill-color": "#ba2516",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-55.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          56
+        ],
+        [
+          ">",
+          "dbz",
+          55.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#b42517",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-56dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          56.5
+        ],
+        [
+          ">",
+          "dbz",
+          56
+        ]
+      ],
+      "paint": {
+        "fill-color": "#ad2618",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-56.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          57
+        ],
+        [
+          ">",
+          "dbz",
+          56.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#a72619",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-57dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          57.5
+        ],
+        [
+          ">",
+          "dbz",
+          57
+        ]
+      ],
+      "paint": {
+        "fill-color": "#a1261a",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-57.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          58
+        ],
+        [
+          ">",
+          "dbz",
+          57.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#9b261b",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-58dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          58.5
+        ],
+        [
+          ">",
+          "dbz",
+          58
+        ]
+      ],
+      "paint": {
+        "fill-color": "#94271c",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-58.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          59
+        ],
+        [
+          ">",
+          "dbz",
+          58.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#8e271d",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-59dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          59.5
+        ],
+        [
+          ">",
+          "dbz",
+          59
+        ]
+      ],
+      "paint": {
+        "fill-color": "#88271e",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-59.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          60
+        ],
+        [
+          ">",
+          "dbz",
+          59.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#822820",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-60dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          60.5
+        ],
+        [
+          ">",
+          "dbz",
+          60
+        ]
+      ],
+      "paint": {
+        "fill-color": "#ca99b4",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-60.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          61
+        ],
+        [
+          ">",
+          "dbz",
+          60.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c992b0",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-61dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          61.5
+        ],
+        [
+          ">",
+          "dbz",
+          61
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c98bad",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-61.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          62
+        ],
+        [
+          ">",
+          "dbz",
+          61.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c885a9",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-62dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          62.5
+        ],
+        [
+          ">",
+          "dbz",
+          62
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c87ea6",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-62.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          63
+        ],
+        [
+          ">",
+          "dbz",
+          62.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c778a2",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-63dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          63.5
+        ],
+        [
+          ">",
+          "dbz",
+          63
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c7719f",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-63.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          64
+        ],
+        [
+          ">",
+          "dbz",
+          63.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c76a9b",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-64dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          64.5
+        ],
+        [
+          ">",
+          "dbz",
+          64
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c66498",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-64.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          65
+        ],
+        [
+          ">",
+          "dbz",
+          64.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c65d94",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-65dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          65.5
+        ],
+        [
+          ">",
+          "dbz",
+          65
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c55791",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-65.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          66
+        ],
+        [
+          ">",
+          "dbz",
+          65.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c5508d",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-66dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          66.5
+        ],
+        [
+          ">",
+          "dbz",
+          66
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c44a8a",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-66.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          67
+        ],
+        [
+          ">",
+          "dbz",
+          66.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c44386",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-67dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          67.5
+        ],
+        [
+          ">",
+          "dbz",
+          67
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c43c83",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-67.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          68
+        ],
+        [
+          ">",
+          "dbz",
+          67.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c3367f",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-68dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          68.5
+        ],
+        [
+          ">",
+          "dbz",
+          68
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c32f7c",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-68.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          69
+        ],
+        [
+          ">",
+          "dbz",
+          68.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c22978",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-69dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          69.5
+        ],
+        [
+          ">",
+          "dbz",
+          69
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c22275",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-69.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          70
+        ],
+        [
+          ">",
+          "dbz",
+          69.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#c21c72",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-70dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          70.5
+        ],
+        [
+          ">",
+          "dbz",
+          70
+        ]
+      ],
+      "paint": {
+        "fill-color": "#9a24e0",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-70.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          71
+        ],
+        [
+          ">",
+          "dbz",
+          70.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#9522db",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-71dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          71.5
+        ],
+        [
+          ">",
+          "dbz",
+          71
+        ]
+      ],
+      "paint": {
+        "fill-color": "#9021d7",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-71.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          72
+        ],
+        [
+          ">",
+          "dbz",
+          71.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#8b20d2",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-72dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          72.5
+        ],
+        [
+          ">",
+          "dbz",
+          72
+        ]
+      ],
+      "paint": {
+        "fill-color": "#861fce",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-72.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          73
+        ],
+        [
+          ">",
+          "dbz",
+          72.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#811ec9",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-73dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          73.5
+        ],
+        [
+          ">",
+          "dbz",
+          73
+        ]
+      ],
+      "paint": {
+        "fill-color": "#7c1dc5",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-73.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          74
+        ],
+        [
+          ">",
+          "dbz",
+          73.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#781cc1",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-74dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          74.5
+        ],
+        [
+          ">",
+          "dbz",
+          74
+        ]
+      ],
+      "paint": {
+        "fill-color": "#731bbc",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-74.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          75
+        ],
+        [
+          ">",
+          "dbz",
+          74.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#6e1ab8",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-75dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          75.5
+        ],
+        [
+          ">",
+          "dbz",
+          75
+        ]
+      ],
+      "paint": {
+        "fill-color": "#6918b3",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-75.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          76
+        ],
+        [
+          ">",
+          "dbz",
+          75.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#6417af",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-76dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          76.5
+        ],
+        [
+          ">",
+          "dbz",
+          76
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5f16aa",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-76.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          77
+        ],
+        [
+          ">",
+          "dbz",
+          76.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5b15a6",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-77dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          77.5
+        ],
+        [
+          ">",
+          "dbz",
+          77
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5614a2",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-77.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          78
+        ],
+        [
+          ">",
+          "dbz",
+          77.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#51139d",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-78dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          78.5
+        ],
+        [
+          ">",
+          "dbz",
+          78
+        ]
+      ],
+      "paint": {
+        "fill-color": "#4c1299",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-78.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          79
+        ],
+        [
+          ">",
+          "dbz",
+          78.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#471194",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-79dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          79.5
+        ],
+        [
+          ">",
+          "dbz",
+          79
+        ]
+      ],
+      "paint": {
+        "fill-color": "#421090",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-79.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          80
+        ],
+        [
+          ">",
+          "dbz",
+          79.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#3e0f8c",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-80dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          80.5
+        ],
+        [
+          ">",
+          "dbz",
+          80
+        ]
+      ],
+      "paint": {
+        "fill-color": "#84fdff",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-80.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          81
+        ],
+        [
+          ">",
+          "dbz",
+          80.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#80f5f9",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-81dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          81.5
+        ],
+        [
+          ">",
+          "dbz",
+          81
+        ]
+      ],
+      "paint": {
+        "fill-color": "#7deef3",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-81.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          82
+        ],
+        [
+          ">",
+          "dbz",
+          81.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#79e7ed",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-82dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          82.5
+        ],
+        [
+          ">",
+          "dbz",
+          82
+        ]
+      ],
+      "paint": {
+        "fill-color": "#76e0e7",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-82.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          83
+        ],
+        [
+          ">",
+          "dbz",
+          82.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#73d9e1",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-83dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          83.5
+        ],
+        [
+          ">",
+          "dbz",
+          83
+        ]
+      ],
+      "paint": {
+        "fill-color": "#6fd2db",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-83.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          84
+        ],
+        [
+          ">",
+          "dbz",
+          83.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#6ccbd5",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-84dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          84.5
+        ],
+        [
+          ">",
+          "dbz",
+          84
+        ]
+      ],
+      "paint": {
+        "fill-color": "#69c4cf",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-84.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          85
+        ],
+        [
+          ">",
+          "dbz",
+          84.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#65bdc9",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-85dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          85.5
+        ],
+        [
+          ">",
+          "dbz",
+          85
+        ]
+      ],
+      "paint": {
+        "fill-color": "#62b5c4",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-85.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          86
+        ],
+        [
+          ">",
+          "dbz",
+          85.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5eaebe",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-86dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          86.5
+        ],
+        [
+          ">",
+          "dbz",
+          86
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5ba7b8",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-86.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          87
+        ],
+        [
+          ">",
+          "dbz",
+          86.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#58a0b2",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-87dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          87.5
+        ],
+        [
+          ">",
+          "dbz",
+          87
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5499ac",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-87.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          88
+        ],
+        [
+          ">",
+          "dbz",
+          87.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#5192a6",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-88dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          88.5
+        ],
+        [
+          ">",
+          "dbz",
+          88
+        ]
+      ],
+      "paint": {
+        "fill-color": "#4e8ba0",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-88.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          89
+        ],
+        [
+          ">",
+          "dbz",
+          88.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#4a849a",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-89dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          89.5
+        ],
+        [
+          ">",
+          "dbz",
+          89
+        ]
+      ],
+      "paint": {
+        "fill-color": "#477d94",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-89.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          90
+        ],
+        [
+          ">",
+          "dbz",
+          89.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#44768f",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-90dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          90.5
+        ],
+        [
+          ">",
+          "dbz",
+          90
+        ]
+      ],
+      "paint": {
+        "fill-color": "#a16549",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-90.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          91
+        ],
+        [
+          ">",
+          "dbz",
+          90.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#9b5a41",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-91dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          91.5
+        ],
+        [
+          ">",
+          "dbz",
+          91
+        ]
+      ],
+      "paint": {
+        "fill-color": "#965038",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-91.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          92
+        ],
+        [
+          ">",
+          "dbz",
+          91.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#914630",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-92dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          92.5
+        ],
+        [
+          ">",
+          "dbz",
+          92
+        ]
+      ],
+      "paint": {
+        "fill-color": "#8c3c28",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-92.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          93
+        ],
+        [
+          ">",
+          "dbz",
+          92.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#873220",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-93dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          93.5
+        ],
+        [
+          ">",
+          "dbz",
+          93
+        ]
+      ],
+      "paint": {
+        "fill-color": "#822818",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-93.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          94
+        ],
+        [
+          ">",
+          "dbz",
+          93.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#7d1e10",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-94dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          94.5
+        ],
+        [
+          ">",
+          "dbz",
+          94
+        ]
+      ],
+      "paint": {
+        "fill-color": "#781408",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source-94.5dbz",
+      "type": "fill",
+      "source": "skywise-contoured-na-base-reflectivity-2016-10-11T18:15:00Z-source",
+      "source-layer": "reflectivity",
+      "filter": [
+        "all",
+        [
+          "<=",
+          "dbz",
+          95
+        ],
+        [
+          ">",
+          "dbz",
+          94.5
+        ]
+      ],
+      "paint": {
+        "fill-color": "#730a01",
+        "fill-opacity": 1
+      }
+    }
+  ]
+}
