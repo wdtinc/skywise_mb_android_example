@@ -1,5 +1,5 @@
 
-# Platform Intergration with Mapbox Native SDK - Android
+# Platform Integration with Mapbox Native SDK - Android
 
 This project contains example code for integrating with the Mapbox Native SDK for Android. The project
 will get a list of the latest contoured radar mosaic frames and animate them in the Mapbox widget.
