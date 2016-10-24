@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cz.msebera.android.httpclient.Header;
-import cz.msebera.android.httpclient.message.BasicHeader;
 
 public final class PlatformClient {
 
@@ -62,7 +61,6 @@ public final class PlatformClient {
         final RequestParams reqParams = new RequestParams();
         reqParams.put("limit", frameCount);
         final Header headers[] = new Header[0];
-//        headers[0] = new BasicHeader("Accept", "application/vnd.wdt+json; version=1");
 
         asyncClient.get(context, getAbsoluteUrl(CONTOURED_RADAR_ANALYSIS_FRAMES_REQ), headers, reqParams, new JsonHttpResponseHandler() {
 
