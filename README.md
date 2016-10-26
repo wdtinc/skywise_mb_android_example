@@ -14,10 +14,8 @@ Modify the constants to include your API keys:
 
 ```java
 private static final String MAPBOX_API_KEY = "";
-private static final String PLATFORM_HOST = "platform-api.dev.us-east-1.wdtinc.com";
+private static final String PLATFORM_HOST = "skywise-tiles.api.wdtinc.com";
 private static final String PLATFORM_PORT = "80";
 private static final String PLATFORM_USERNAME = "";
 private static final String PLATFORM_PW = "";
 ```
-
-To access platform-api.dev.us-east-1.wdtinc.com, your device needs to be connected to the WDT VPN.

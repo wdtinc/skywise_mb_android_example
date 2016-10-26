@@ -18,7 +18,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class MainActivity extends AppCompatActivity {
     private static final String MAPBOX_API_KEY = "";
-    private static final String PLATFORM_HOST = "platform-api.dev.us-east-1.wdtinc.com";
+    private static final String PLATFORM_HOST = "skywise-tiles.api.wdtinc.com";
     private static final String PLATFORM_PORT = "80";
     private static final String PLATFORM_USERNAME = "";
     private static final String PLATFORM_PW = "";
