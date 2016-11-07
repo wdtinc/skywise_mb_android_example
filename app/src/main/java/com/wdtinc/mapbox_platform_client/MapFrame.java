@@ -21,6 +21,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * SkyWise Tiles 'Frame' object and its Mapbox SDK layers.
+ */
 public final class MapFrame {
     public static final float DEFAULT_OPACITY = 1f;
 
@@ -57,9 +60,9 @@ public final class MapFrame {
         mapboxMap.addSource(source);
 
 
-        final List<String> layerIds = new ArrayList<>(ColorStep.DEFAULT_COLOR_STEPS.size());
+        final List<String> layerIds = new ArrayList<>(ColorStep.DEFAULT_DBZ_COLOR_STEPS.size());
 
-        for(ColorStep s : ColorStep.DEFAULT_COLOR_STEPS) {
+        for(ColorStep s : ColorStep.DEFAULT_DBZ_COLOR_STEPS) {
             String nextLayerId = layerId + s.max + "," + s.min;
             layerIds.add(nextLayerId);
 

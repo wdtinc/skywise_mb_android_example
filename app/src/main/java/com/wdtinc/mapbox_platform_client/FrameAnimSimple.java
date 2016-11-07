@@ -12,6 +12,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * Base implementation for a radar reflectivity animation loop.
+ */
 public class FrameAnimSimple implements IFrameAnim {
 
     private final List<MapFrame> frames;

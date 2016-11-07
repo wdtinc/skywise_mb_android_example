@@ -28,10 +28,10 @@ The API used in this demo is in BETA and may change in the future.
 
 ```java
 private static final String MAPBOX_API_KEY = "";
-private static final String PLATFORM_HOST = "skywise-tiles.api.wdtinc.com";
-private static final String PLATFORM_PORT = "80";
-private static final String PLATFORM_USERNAME = "";
-private static final String PLATFORM_PW = "";
+private static final String SKYWISE_TILES_HOST = "skywise-tiles.api.wdtinc.com";
+private static final String SKYWISE_TILES_PORT = "80";
+private static final String SKYWISE_TILES_USERNAME = "";
+private static final String SKYWISE_TILES_PW = "";
 ```
 
 3) Use [Android Studio](https://developer.android.com/studio/index.html) to launch the application on your Android Device. 
@@ -42,6 +42,6 @@ NOTE 2: This example code uses a beta snapshot of the Mapbox Android SDK for lat
 
 # Links
 
-- [WDT Platform API Overview - v2 BETA](http://docs.api.wdtinc.com/skywise-tiles/en/2.0/)
+- [WDT SkyWise Tiles API Overview - v2 BETA](http://docs.api.wdtinc.com/skywise-tiles/en/2.0/)
 - [Mapbox Android SDK](https://www.mapbox.com/android-sdk/)
 - [Mapbox Android SDK Github](https://github.com/mapbox/mapbox-gl-native/tree/master/platform/android)

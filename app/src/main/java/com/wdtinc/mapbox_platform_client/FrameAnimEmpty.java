@@ -3,6 +3,9 @@ package com.wdtinc.mapbox_platform_client;
 
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 
+/**
+ * Empty case for frame animation.
+ */
 public final class FrameAnimEmpty implements IFrameAnim {
 
     @Override

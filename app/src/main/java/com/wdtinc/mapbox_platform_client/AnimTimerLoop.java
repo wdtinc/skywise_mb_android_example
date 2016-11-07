@@ -4,9 +4,16 @@ import android.os.SystemClock;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
+/**
+ * Advance simulation time forward using the system clock. Scales time advancement
+ * using {@link #TIME_SCALE}. Calls {@link IFrameAnim#act(long)} on main activity's animation.
+ */
 public final class AnimTimerLoop implements Runnable {
 
+    /** Simulation time step interval */
     private static final long MAX_WAIT_MS = 1000L / 120L;
+
+    /** How much faster than real time */
     private static final long TIME_SCALE = 1_000L;
 
 
@@ -37,6 +44,9 @@ public final class AnimTimerLoop implements Runnable {
         }
     }
 
+    /**
+     * Shutdown the animation timer.
+     */
     public void shutdown() {
         isShutdown.set(true);
     }

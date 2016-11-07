@@ -23,9 +23,13 @@ public final class FrameAnims {
      * @param mapFrames
      * @param mainHandler
      * @param mainActivity
+     * @param mapboxMap contains layers used by the animations
      * @return animation with the provided frames
      */
-    public static IFrameAnim create(Collection<MapFrame> mapFrames, Handler mainHandler, MainActivity mainActivity, MapboxMap mapboxMap) {
+    public static IFrameAnim create(Collection<MapFrame> mapFrames,
+                                    Handler mainHandler,
+                                    MainActivity mainActivity,
+                                    MapboxMap mapboxMap) {
         return new FrameAnimSimple(mapFrames, mainHandler, mainActivity, mapboxMap);
     }
 }

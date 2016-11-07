@@ -3,9 +3,13 @@ package com.wdtinc.mapbox_platform_client;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Defines value range and associated fill color.
+ */
 public final class ColorStep {
 
-    public static final List<ColorStep> DEFAULT_COLOR_STEPS = Arrays.asList(
+    /** Default color steps for radar reflectivity */
+    public static final List<ColorStep> DEFAULT_DBZ_COLOR_STEPS = Arrays.asList(
             new ColorStep(0f, 5f, "rgba(0, 236, 236, 0)"),
             new ColorStep(5f, 10f, "rgba(0, 236, 236, 15)"),
             new ColorStep(12f, 14f, "rgba(0, 211, 239, 255)"),

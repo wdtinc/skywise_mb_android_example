@@ -17,11 +17,14 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class MainActivity extends AppCompatActivity {
+
+    // TODO: Fill in your credentials
+    // WARNING: Production apps should protect their keys!
     private static final String MAPBOX_API_KEY = "";
-    private static final String PLATFORM_HOST = "skywise-tiles.api.wdtinc.com";
-    private static final String PLATFORM_PORT = "80";
-    private static final String PLATFORM_USERNAME = "";
-    private static final String PLATFORM_PW = "";
+    private static final String SKYWISE_TILES_HOST = "skywise-tiles.api.wdtinc.com";
+    private static final String SKYWISE_TILES_PORT = "80";
+    private static final String SKYWISE_TILES_USERNAME = "";
+    private static final String SKYWISE_TILES_PW = "";
 
 
     private MapView mapView;
@@ -64,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
 
         final MainActivity self = this;
 
-        PlatformClient platformClient = new PlatformClient("http://" + PLATFORM_HOST,
-                getApplicationContext(), PLATFORM_USERNAME, PLATFORM_PW);
-        platformClient.getAnalysisFrames(12, new PlatformClient.FramesCallback() {
+        SkyWiseTilesClient tilesClient = new SkyWiseTilesClient("http://" + SKYWISE_TILES_HOST,
+                getApplicationContext(), SKYWISE_TILES_USERNAME, SKYWISE_TILES_PW);
+        tilesClient.getAnalysisFrames(12, new SkyWiseTilesClient.FramesCallback() {
             @Override
             public void onResult(List<MapFrame.Meta> frameMetas) {
                 self.resetAnimLoopTo(frameMetas);
@@ -159,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
                 // Build map frames from metadata
                 List<MapFrame> mapFrames = new ArrayList<>(framesMeta.size());
                 for(MapFrame.Meta fm : framesMeta) {
-                    mapFrames.add(MapFrame.createMapFrame(mapboxMap, PLATFORM_HOST, PLATFORM_PORT, fm));
+                    mapFrames.add(MapFrame.createMapFrame(mapboxMap, SKYWISE_TILES_HOST, SKYWISE_TILES_PORT, fm));
                 }
 
                 // Set built frames as new animation

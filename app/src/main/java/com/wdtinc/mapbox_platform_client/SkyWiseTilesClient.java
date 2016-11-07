@@ -18,7 +18,7 @@ import java.util.List;
 
 import cz.msebera.android.httpclient.Header;
 
-public final class PlatformClient {
+public final class SkyWiseTilesClient {
 
     private static final String CONTOURED_RADAR_ANALYSIS_FRAMES_REQ = "/v2/products/d4fce90f-8ee7-472c-8d02-51058870a751/frames.json";
 
@@ -30,7 +30,7 @@ public final class PlatformClient {
                 nextJsonObj = jsonArray.getJSONObject(i);
                 frameMetas.add(new MapFrame.Meta(nextJsonObj.getString("id"), nextJsonObj.getString("validTime")));
             } catch (ParseException | JSONException e) {
-                Log.e(PlatformClient.class.getCanonicalName(), e.getMessage());
+                Log.e(SkyWiseTilesClient.class.getCanonicalName(), e.getMessage());
             }
         }
         return frameMetas;
@@ -46,7 +46,7 @@ public final class PlatformClient {
     private final String baseUrl;
     private final Context context;
 
-    public PlatformClient(String baseUrl, Context context, String username, String password) {
+    public SkyWiseTilesClient(String baseUrl, Context context, String username, String password) {
         this.baseUrl = baseUrl;
         this.context = context;
         asyncClient = new AsyncHttpClient();
@@ -71,17 +71,17 @@ public final class PlatformClient {
 
             @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-                Log.e(PlatformClient.class.getCanonicalName(), errorResponse.toString());
+                Log.e(SkyWiseTilesClient.class.getCanonicalName(), errorResponse.toString());
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
-                Log.e(PlatformClient.class.getCanonicalName(), errorResponse.toString());
+                Log.e(SkyWiseTilesClient.class.getCanonicalName(), errorResponse.toString());
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
-                Log.e(PlatformClient.class.getCanonicalName(), throwable.toString());
+                Log.e(SkyWiseTilesClient.class.getCanonicalName(), throwable.toString());
             }
         });
     }
