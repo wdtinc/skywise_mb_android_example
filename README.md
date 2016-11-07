@@ -22,7 +22,7 @@ The API used in this demo is in BETA and may change in the future.
 
 ### Setup
 
-1) Open the file: [MainActivity.java](app/src/main/java/com/wdtinc/mapbox_platform_client/MainActivity.java)
+1) Open the file: [MainActivity.java](app/src/main/java/com/wdtinc/mapbox_skywise_tiles_client/MainActivity.java)
 
 2) Modify the constants to include your API keys:
 

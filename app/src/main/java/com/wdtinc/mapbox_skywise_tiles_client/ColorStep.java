@@ -1,4 +1,4 @@
-package com.wdtinc.mapbox_platform_client;
+package com.wdtinc.mapbox_skywise_tiles_client;
 
 import java.util.Arrays;
 import java.util.List;

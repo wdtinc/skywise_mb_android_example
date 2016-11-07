@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.wdtinc.mapbox_platform_client.MainActivity">
+    tools:context="com.wdtinc.mapbox_skywise_tiles_client.MainActivity">
 
     <!-- Set the starting camera position and map style using xml-->
     <com.mapbox.mapboxsdk.maps.MapView
