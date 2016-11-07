@@ -29,6 +29,6 @@ Run the application on your Android Device.
 
 # Links
 
-[WDT Platform API Overview - v2 BETA](http://docs.api.wdtinc.com/skywise-tiles/en/2.0/)
-[Mapbox Android SDK](https://www.mapbox.com/android-sdk/)
-[Mapbox Android SDK Github](https://github.com/mapbox/mapbox-gl-native/tree/master/platform/android)
+- [WDT Platform API Overview - v2 BETA](http://docs.api.wdtinc.com/skywise-tiles/en/2.0/)
+- [Mapbox Android SDK](https://www.mapbox.com/android-sdk/)
+- [Mapbox Android SDK Github](https://github.com/mapbox/mapbox-gl-native/tree/master/platform/android)
