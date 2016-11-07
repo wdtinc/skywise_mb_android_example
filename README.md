@@ -9,9 +9,16 @@ frames and animate them in the Mapbox widget.
 
 **A Mapbox API Key and WDT SkyWise Tiles credentials are required.**
 
-### Beta Disclaimer
+### BETA Disclaimer
 
 The API used in this demo is in BETA and may change in the future.
+
+### Prerequisites
+
+- WDT SkyWise Tiles Credentials
+- Mapbox API Key
+- [Android Studio](https://developer.android.com/studio/index.html) or other IDE
+- Android Device with 'Ice Cream Sandwich' (API 15+)
 
 ### Setup
 
