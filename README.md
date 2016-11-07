@@ -9,13 +9,15 @@ frames and animate them in the Mapbox widget.
 
 **A Mapbox API Key and WDT SkyWise Tiles credentials are required.**
 
-Open the file:
+### Beta Disclaimer
 
-```java
-com.wdtinc.mapbox_platform_client.MainActivity.java
-```
+The API used in this demo is in BETA and may change in the future.
 
-Modify the constants to include your API keys:
+### Setup
+
+1) Open the file: [MainActivity.java](app/src/main/java/com/wdtinc/mapbox_platform_client/MainActivity.java)
+
+2) Modify the constants to include your API keys:
 
 ```java
 private static final String MAPBOX_API_KEY = "";
@@ -25,7 +27,11 @@ private static final String PLATFORM_USERNAME = "";
 private static final String PLATFORM_PW = "";
 ```
 
-Run the application on your Android Device.
+3) Use [Android Studio](https://developer.android.com/studio/index.html) to launch the application on your Android Device. 
+
+NOTE 1: See the [Mapbox Android SDK Github](https://github.com/mapbox/mapbox-gl-native/tree/master/platform/android) for details on emulator support. Often works best on physical devices.
+
+NOTE 2: This example code uses a beta snapshot of the Mapbox Android SDK for latest fixes and the dynamic styling API.
 
 # Links
 
