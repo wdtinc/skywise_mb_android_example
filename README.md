@@ -11,7 +11,8 @@ frames and animate them in the Mapbox widget.
 
 ### BETA Disclaimer
 
-The API used in this demo is in BETA and may change in the future.
+The API used in this demo is in BETA and may change in the future. Response times and processing may not be fully optimized. 
+Additionally, the format of the tile data may change.
 
 ### Prerequisites
 
