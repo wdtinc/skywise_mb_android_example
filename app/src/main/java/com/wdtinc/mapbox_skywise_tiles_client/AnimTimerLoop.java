@@ -14,7 +14,7 @@ public final class AnimTimerLoop implements Runnable {
     private static final long MAX_WAIT_MS = 1000L / 120L;
 
     /** How much faster than real time */
-    private static final long TIME_SCALE = 1_000L;
+    private static final long TIME_SCALE = 500L;
 
 
     private final AtomicBoolean isShutdown;

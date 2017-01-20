@@ -27,6 +27,10 @@ import java.util.Locale;
 public final class MapFrame {
     public static final float DEFAULT_OPACITY = 1f;
 
+    public static final String MVT_LAYER_NAME = "reflectivity";
+    public static final String ATTR_KEY_PRECIP_TYPE = "ptype";
+    public static final String ATTR_KEY_DBZ = "dbz";
+
     /**
      * Metadata for a map frame.
      */
@@ -59,26 +63,45 @@ public final class MapFrame {
         final Source source = new VectorSource(sourceId, tileSet);
         mapboxMap.addSource(source);
 
+        final List<PrecipTypedColorStep> colorSteps = PrecipTypedColorStep.DEFAULT_DBZ_COLOR_STEPS;
+        final List<String> layerIds = new ArrayList<>(colorSteps.size());
 
-        final List<String> layerIds = new ArrayList<>(ColorStep.DEFAULT_DBZ_COLOR_STEPS.size());
+        for(PrecipTypedColorStep s : colorSteps) {
 
-        for(ColorStep s : ColorStep.DEFAULT_DBZ_COLOR_STEPS) {
+            // New layer
             String nextLayerId = layerId + s.max + "," + s.min;
             layerIds.add(nextLayerId);
 
             final FillLayer layer = new FillLayer(nextLayerId, sourceId);
-            layer.setSourceLayer("reflectivity");
+            layer.setSourceLayer(MVT_LAYER_NAME);
+
+
+            // Create allowed precipitation types filter
+            final Filter.Statement[] eqStmts = new Filter.Statement[s.pTypes.size()];
+            int i = 0;
+            for(PrecipType pType : s.pTypes) {
+                eqStmts[i++] = Filter.eq(ATTR_KEY_PRECIP_TYPE, pType.name());
+            }
+            final Filter.Statement precipTypeFilter = Filter.any((Filter.Statement[]) eqStmts);
+
+            // Create filter
             layer.setFilter(
                     Filter.all(
-                            Filter.gt("dbz", s.min),
-                            Filter.lte("dbz", s.max)
+                            Filter.gt(ATTR_KEY_DBZ, s.min),
+                            Filter.lte(ATTR_KEY_DBZ, s.max)
+//                            ,
+//                            precipTypeFilter
                     )
             );
+
+            // Layer properties
             layer.setProperties(
                     PropertyFactory.fillColor(s.rgbaColor),
-                    PropertyFactory.fillOpacity(DEFAULT_OPACITY),
-                    PropertyFactory.fillAntialias(true)
+                    PropertyFactory.fillOpacity(0f),
+                    PropertyFactory.fillAntialias(false)
             );
+
+            // Add layer to map
             mapboxMap.addLayer(layer);
         }
 

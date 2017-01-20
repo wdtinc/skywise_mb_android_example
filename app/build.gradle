@@ -32,17 +32,17 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
 
-//    compile ('com.mapbox.mapboxsdk:mapbox-android-sdk:4.1.1@aar'){
-//        transitive=true
-//    }
-
-//    compile('com.mapbox.mapboxsdk:mapbox-android-sdk:4.2.0-beta.3@aar'){
-//        transitive=true
-//    }
-
-    compile('com.mapbox.mapboxsdk:mapbox-android-sdk:4.2.0-SNAPSHOT@aar'){
+    compile ('com.mapbox.mapboxsdk:mapbox-android-sdk:4.2.1@aar'){
         transitive=true
     }
+
+//    compile('com.mapbox.mapboxsdk:mapbox-android-sdk:4.2.0-beta.5@aar'){
+//        transitive=true
+//    }
+
+//    compile('com.mapbox.mapboxsdk:mapbox-android-sdk:4.2.1-SNAPSHOT@aar'){
+//        transitive=true
+//    }
 
     compile 'com.loopj.android:android-async-http:1.4.9'
 

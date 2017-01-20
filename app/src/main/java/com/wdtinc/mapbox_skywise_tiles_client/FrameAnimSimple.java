@@ -2,6 +2,7 @@ package com.wdtinc.mapbox_skywise_tiles_client;
 
 
 import android.os.Handler;
+import android.util.Log;
 
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 
@@ -67,13 +68,20 @@ public class FrameAnimSimple implements IFrameAnim {
 
         timeElapsed = -avgFrameTimeMs;
 
+        // Show first frame
+        frames.get(0).setOpacity(mapboxMap, MapFrame.DEFAULT_OPACITY);
+
         // Hide all animation frames except for first
         for(int i = 1; i < frames.size(); ++i) {
             frames.get(i).hide(mapboxMap);
+            frames.get(i).setOpacity(mapboxMap, 0f);
         }
     }
 
     public void showFrame(MapboxMap mapboxMap, int nextFrameIndex) {
+        if(frames.size() < 2) {
+            return;
+        }
 
         try {
             frameUpdateLock.tryLock(200L, TimeUnit.MILLISECONDS);
@@ -93,6 +101,7 @@ public class FrameAnimSimple implements IFrameAnim {
             MapFrame currFrame = getCurrFrame();
             if(currFrame != null) {
                 currFrame.hide(mapboxMap);
+                currFrame.setOpacity(mapboxMap, 0f);
             }
 
             // Advance current frame
@@ -101,7 +110,7 @@ public class FrameAnimSimple implements IFrameAnim {
 
             // Show current frame
             if(currFrame != null) {
-                currFrame.show(mapboxMap);
+//                currFrame.show(mapboxMap);
                 currFrame.setOpacity(mapboxMap, MapFrame.DEFAULT_OPACITY);
             }
 
@@ -112,7 +121,11 @@ public class FrameAnimSimple implements IFrameAnim {
                 forwardFrame.show(mapboxMap);
             }
 
+//            mapboxMap.invalidate();
+
         } catch (InterruptedException ignored) {
+            Log.e(FrameAnimSimple.class.getCanonicalName(), "Interrupted: " + ignored.getMessage());
+
         } finally { frameUpdateLock.unlock(); }
     }
 

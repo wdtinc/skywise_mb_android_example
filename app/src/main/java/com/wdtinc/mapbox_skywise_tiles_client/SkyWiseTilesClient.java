@@ -21,6 +21,7 @@ import cz.msebera.android.httpclient.Header;
 public final class SkyWiseTilesClient {
 
     private static final String CONTOURED_RADAR_ANALYSIS_FRAMES_REQ = "/v2/products/d4fce90f-8ee7-472c-8d02-51058870a751/frames.json";
+//    private static final String CONTOURED_RADAR_ANALYSIS_FRAMES_REQ = "/v2/products/2dd45db8-7405-4cbe-9c12-e044c7e2c4ec/frames.json";
 
     private static List<MapFrame.Meta> toFrames(JSONArray jsonArray) {
         final List<MapFrame.Meta> frameMetas = new ArrayList<>(jsonArray.length());
@@ -71,12 +72,12 @@ public final class SkyWiseTilesClient {
 
             @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-                Log.e(SkyWiseTilesClient.class.getCanonicalName(), errorResponse.toString());
+                Log.e(SkyWiseTilesClient.class.getCanonicalName(), errorResponse == null ? "" : errorResponse.toString());
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
-                Log.e(SkyWiseTilesClient.class.getCanonicalName(), errorResponse.toString());
+                Log.e(SkyWiseTilesClient.class.getCanonicalName(), errorResponse == null ? "" : errorResponse.toString());
             }
 
             @Override
